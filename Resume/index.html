@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Резюме — Момунбеков Куттубай</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Резюме</h1>
+
+    <button onclick="showAbout()">Обо мне</button>
+    <button onclick="goToProjects()">Проекты</button>
+
+    <hr>
+
+    <div id="content">
+        Нажмите кнопку, чтобы увидеть информацию
+    </div>
+</div>
+
+<script>
+    function showAbout() {
+        document.getElementById("content").innerHTML = `
+            <img src="images/me.jpg" alt="Моё фото">
+            <h2>Момунбеков Куттубай</h2>
+            <p><b>Навыки:</b> HTML, CSS, JavaScript</p>
+            <p>Начинающий веб-разработчик. Изучаю создание сайтов и хочу развиваться в сфере IT.</p>
+        `;
+    }
+
+    function goToProjects() {
+        window.location.href = "projects.html";
+    }
+</script>
+
+</body>
+</html>
+
